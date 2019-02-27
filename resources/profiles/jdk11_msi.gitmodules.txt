@@ -1,10 +1,16 @@
 deps/freetype
 deps/giflib
+deps/jmc
+deps/jmc-mvnrepo
+deps/jmc-p2repo-babel-photon
+deps/jmc-p2repo-local
+deps/jmc-p2repo-photon
 deps/libjpeg-turbo
 deps/libpng
 deps/nss
 deps/zlib
 external/freetype
+external/giflib
 external/libjpeg-turbo
 external/libpng
 external/zlib
@@ -22,7 +28,8 @@ lookaside/tzdata
 lookaside/zlib
 tools/bootjdk10
 tools/cmake
-tools/cygwin64
+tools/cygwin_jdk11
+tools/maven
 tools/nasm
 tools/pkgconfig
 tools/toolchain/sdk10_1607
@@ -30,3 +37,4 @@ tools/toolchain/vs2017bt
 tools/wix
 tools/wixgen
 tools/zip
+upstream/jmc

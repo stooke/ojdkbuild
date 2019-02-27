@@ -35,8 +35,10 @@ set CURRENT_CPU=x64
 set PlatformToolset=Windows7.1SDK
 set TARGET_PLATFORM=XP
 set LIB=%VS%/VC/Lib/amd64;%WINSDK%/Lib/x64
+set VS_LIB=%LIB%
 set LIBPATH=%VS%/VC/Lib/amd64
 set INCLUDE=%VS%/VC/INCLUDE;%WINSDK%/INCLUDE;%WINSDK%/INCLUDE/gl;
+set VS_INCLUDE=%INCLUDE%
 
 rem additional tools
 set WINLD=%VS%/VC/Bin/x86_amd64/link.exe
@@ -44,6 +46,10 @@ set MT=%WINSDK%/Bin/mt.exe
 set RC=%WINSDK%/Bin/rc.exe
 set WINAR=%VS%/VC/Bin/x86_amd64/lib.exe
 set DUMPBIN=%VS%/VC/Bin/x86_amd64/dumpbin.exe
+
+rem misc vars
+set CYGWIN=nodosfilewarning
+set OBJCOPY=NOT_NEEDED_ON_WINDOWS
 
 rem set path
 set PATH=%VS%/Common7/IDE;%VS%/Common7/Tools;%VS%/VC/Bin/x86_amd64;%VS%/VC/Bin;%VS%/VC/Bin/VCPackages
@@ -53,5 +59,6 @@ set PATH=%PATH%;%VS%/Common7/IDE
 set PATH=%PATH%;%OJDKBUILD_DIR%/tools/cmake/bin
 set PATH=%PATH%;%OJDKBUILD_DIR%/tools/pkgconfig/bin
 set PATH=%PATH%;%OJDKBUILD_DIR%/tools/nasm
+set PATH=%PATH%;%OJDKBUILD_DIR%/tools/make
 set PATH=%PATH%;%OJDKBUILD_DIR%/tools/perl520/perl/bin
 set PATH=%PATH%;%OJDKBUILD_DIR%/resources/scripts
